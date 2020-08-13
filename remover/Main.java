@@ -6,11 +6,8 @@ import java.util.stream.Collectors;
 public class Main {
     public static void removeOggy(ArrayList<String> names) {
         for (String str:names){
-           if(str.startsWith("oggy")){
+           if(str.startsWith("oggy"))
              str.remove();
-           }
-
-            
         }
         
         

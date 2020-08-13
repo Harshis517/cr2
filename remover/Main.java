@@ -5,10 +5,14 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void removeOggy(ArrayList<String> names) {
-        for (String str:names){
-           if(str.startsWith("oggy"))
-             str.remove();
-        }
+    
+          Iterator itr = names.iterator(); 
+    	 while (itr.hasNext()) 
+         { 
+            String s = (String) itr.next();
+             if (s.startsWith("oggy")) 
+                 itr.remove(); 
+         } 
         
         
     }
